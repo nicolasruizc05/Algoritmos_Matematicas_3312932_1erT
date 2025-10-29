@@ -1,0 +1,17 @@
+Algoritmo Separacion_numero_entero_decenas_unidad
+	//definir variables
+	definir dividendo,divisor, numero, division,cociente Como Entero
+	//asignacion constante
+	divisor<-10
+	//reccepcion de numero entero 
+	Escribir "Por favor ingresar un numero entero de 2 digitos"
+	leer numero
+	//asignacion de operacion
+	dividendo<-numero
+	division<- trunc(dividendo/divisor)
+	cociente<- dividendo mod divisor 
+	//mostrar resultado 
+	Escribir "La decena de este numero es: ", division
+	Escribir "La unidad de este numero es: ", cociente
+	
+FinAlgoritmo

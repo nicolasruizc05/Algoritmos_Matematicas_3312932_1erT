@@ -1,0 +1,25 @@
+Algoritmo Calificacion_final
+	//definicion de variables
+	Definir nota_final,parciales,examen,trabajo,parcial1,parcial2,parcial3,promedio_examen,promedio_parciales,promedio_trabajo como real
+	//ingresar notas de los parciales 
+	Escribir "Ingresar el valor de las notas de los 3 parciales"
+	Leer parcial1 
+	Leer parcial2
+	Leer parcial3
+	//Ingresar la nota del examen final 
+	Escribir "Ingresar el valor de la nota del examen final"
+	Leer examen
+	// Ingresar la nota del trabajo final 
+	Escribir "Ingresar el valor de la nota del taller final"
+	Leer trabajo
+	//asignacion porcentajes 
+	promedio_parciales<- ((parcial1+parcial2+parcial3)/3)*0.55
+	promedio_examen<- examen*0.3
+	promedio_trabajo<- trabajo*0.15
+	nota_final<- promedio_examen+promedio_parciales+promedio_trabajo
+	//Mostrar resultados 
+	Escribir "La nota del promedio de los parciales equivalente al 55% de la nota final es: ", promedio_parciales
+	Escribir "La nota del promedio del examen final equivalente al 30% de la nota final es: " , promedio_examen
+	Escribir "La nota del promedio del trabajo final equivalente al 15% de la nota final es: ", promedio_trabajo
+	Escribir "Su nota final es: ", nota_final
+FinAlgoritmo

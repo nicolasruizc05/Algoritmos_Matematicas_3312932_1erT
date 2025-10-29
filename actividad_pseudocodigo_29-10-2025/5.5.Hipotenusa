@@ -1,0 +1,15 @@
+Algoritmo Hipotenusa
+	//definir variables 
+	definir A Como Real
+	Definir b como real 
+	Definir c como real//hipotenusa
+	//solicitud de los valores 
+	Escribir "Por favor registre el valor del cateto A" 
+	Leer A
+	Escribir "Por favor registre el valor del cateto B"
+	Leer b
+	c<-raiz(a^2+b^2)
+	Escribir "La hipotenusa de un triangulo el cual sus catetos son:", " Cateto A ", A, " y el Cateto B ", b, " es igual = ", c
+	
+	
+FinAlgoritmo

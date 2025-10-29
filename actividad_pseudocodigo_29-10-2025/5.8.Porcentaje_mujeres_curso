@@ -1,0 +1,24 @@
+Algoritmo Porcentaje_mujeres_curso
+	//Definir variable
+	Definir mujer Como Entero
+	Definir hombre Como Entero
+	Definir curso Como Entero
+	Definir porcentaje_mujer Como Real
+	Definir porcentaje_hombre Como Real
+	//Ingreso de valores por hombre y mujer
+	Escribir "Por favor registre el total de mujeres en el curso"
+	Leer mujer
+	Escribir "Por favor registre el total de hombres en el curso"
+	Leer hombre
+	//Asignacion de porcentajes
+	curso<-mujer+hombre
+	porcentaje_mujer<-mujer*100/curso
+	porcentaje_hombre<-hombre*100/curso
+	//mostrar resultados 
+	Escribir "El porcentaje de mujeres en el curso es: ", porcentaje_mujer
+	Escribir "El porcentaje de hombres en el curso es; ", porcentaje_hombre
+	
+	
+	
+	
+FinAlgoritmo

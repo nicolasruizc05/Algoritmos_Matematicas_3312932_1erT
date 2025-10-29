@@ -1,0 +1,14 @@
+Algoritmo Perimetro_area_rectangulo
+	// definicion de variables
+	Definir perimetro, altura, base, area Como Real
+	// inicio del codigo en el cual se solicita la base y la altura del rectangulo
+	Escribir "ingrese por favor la base del rectangulo"
+	leer base
+	Escribir "ingrese por favor la altura del rectangulo"
+	leer altura 
+	//se asigna el valor u operacion de las variables 
+	area<- base*altura
+	perimetro<- (base*2)+(altura*2)
+	// se muestra los resultados de las operaciones
+	Escribir "Dada la base del rectangulo", " " ,base, " ", "y la altura del mismo", " ", altura, " ","Su area es"," ", "=", " ", area, " "," y su perimetro es", " ", "=", " ", perimetro   
+FinAlgoritmo

@@ -1,0 +1,16 @@
+Algoritmo Pulsaciones_10_segundos
+	//Definir  variables
+	Definir edad Como Entero
+	definir num_pulsaciones Como Real
+	definir segundos Como Entero
+	Definir pulsaciones Como Entero
+	//asignacion de variables fijas
+	pulsaciones<- 220
+	segundos<- 10
+	//solicitud de datos 
+	Escribir " Por favor registre su edad "
+	Leer edad 
+	num_pulsaciones<- (pulsaciones-edad)/segundos
+	Escribir " Las pulsaciones que debe tener cada 10 segundos es = "  num_pulsaciones 
+	
+FinAlgoritmo

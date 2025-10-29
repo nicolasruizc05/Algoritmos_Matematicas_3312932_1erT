@@ -1,0 +1,45 @@
+Algoritmo Promedio_tiempo_ruta
+	// Definición de variables
+    Definir minutos_lunes, minutos_miercoles, minutos_viernes Como Entero
+    Definir segundos_lunes, segundos_miercoles, segundos_viernes Como Entero
+    Definir segundos_totales_lunes, segundos_totales_miercoles, segundos_totales_viernes Como Entero
+    Definir promedio_segundos_semana Como Real
+    Definir promedio_segundos_entero, minutos_promedio, segundos_promedio Como Entero
+	
+    // Solicitud de datos
+    Escribir "Por favor registre el tiempo que hizo el día lunes:"
+    Escribir "Minutos:"
+    Leer minutos_lunes
+    Escribir "Segundos:"
+    Leer segundos_lunes
+	
+    Escribir "Por favor registre el tiempo que hizo el día miércoles:"
+    Escribir "Minutos:"
+    Leer minutos_miercoles
+    Escribir "Segundos:"
+    Leer segundos_miercoles
+	
+    Escribir "Por favor registre el tiempo que hizo el día viernes:"
+    Escribir "Minutos:"
+    Leer minutos_viernes
+    Escribir "Segundos:"
+    Leer segundos_viernes
+	
+    // Conversión de minutos a segundos
+    segundos_totales_lunes <- (minutos_lunes * 60) + segundos_lunes
+    segundos_totales_miercoles <- (minutos_miercoles * 60) + segundos_miercoles
+    segundos_totales_viernes <- (minutos_viernes * 60) + segundos_viernes
+	
+    // Cálculo del promedio total en segundos
+    promedio_segundos_semana <- (segundos_totales_lunes + segundos_totales_miercoles + segundos_totales_viernes) / 3
+	
+    // Convertir el promedio a entero (para usar MOD)
+    promedio_segundos_entero <- trunc(promedio_segundos_semana)
+	
+    // Calcular minutos y segundos
+    minutos_promedio <- trunc(promedio_segundos_entero / 60)
+    segundos_promedio <- promedio_segundos_entero MOD 60
+	
+    // Mostrar el resultado formateado
+    Escribir "Su tiempo promedio es ", minutos_promedio, " minutos y ", segundos_promedio, " segundos."
+FinAlgoritmo

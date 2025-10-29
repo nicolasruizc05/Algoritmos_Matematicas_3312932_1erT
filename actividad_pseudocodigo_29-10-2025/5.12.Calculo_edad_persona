@@ -1,0 +1,34 @@
+Algoritmo Calculo_edad_persona
+	//Definicion de variables
+	Definir ano_n Como Entero
+	definir mes_n como entero	
+	Definir dia_n Como Entero
+	definir ano_a Como Entero
+	definir mes_a Como Entero
+	definir dia_a como entero
+	//Solicitud datos
+	Escribir "por favor ingrese su año de nacimiento"
+	Leer ano_n
+	Escribir "por favor ingrese su mes de nacimiento"
+	Leer mes_n
+	Escribir "por favor ingrese su dia de nacimiento"
+	leer dia_n
+	//solicitamos dia actual
+	Escribir "por favor ingrese su año de nacimiento"
+	Leer ano_a
+	Escribir "por favor ingrese su mes de nacimiento"
+	Leer mes_a
+	Escribir "por favor ingrese su dia de nacimiento"
+	leer dia_a
+	//Asignacion de operaciones 
+	conversion_ano_n<-ano_n*365
+	conversion_mes_n<-mes_n*12
+	dias_nacimiento_n<-dia_n+conversion_mes_n+conversion_ano_n
+	conversion_ano_a<-ano_a*365
+	conversion_mes_a<-mes_a*12
+	dias<-conversion_ano_a+conversion_mes_a+dia_a
+	edad<-(dias-dias_nacimiento_n)/365
+	Escribir "Teniendo en cuenta los datos registrados su edad es: ", edad
+	
+	
+FinAlgoritmo

@@ -1,0 +1,12 @@
+Algoritmo Area_circulo
+	// definir variables 
+	Definir area,radio Como Real
+	//inicia el codigo solicitando el radio del circulo 
+	Escribir "Por favor registrar el radio del circulo"
+	Leer radio
+	//se asigna el valor de la variable para realizar la operacion 
+	area <- pi*radio^2
+	// se muestra el resultado de la operacion 
+	Escribir "El area del circulo cuyo radio es:", " ", radio
+	Escribir "area", " ", area
+FinAlgoritmo

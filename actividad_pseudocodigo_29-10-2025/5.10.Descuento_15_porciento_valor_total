@@ -1,0 +1,15 @@
+Algoritmo Descuento_15_porciento_valor_total
+	//definicion de variables
+	Definir valor_total Como real
+	Definir descuento Como Real
+	Definir Total_pagar Como Real
+	//Solicitud de datos 
+	Escribir "Por favor registre el valor total a pagar sin descuento"
+	Leer valor_total
+	//Asignacion del porcentaje y valor a pagar 
+	descuento<- valor_total*0.15
+	Total_pagar<- valor_total-descuento
+	//mostrar resultado
+	Escribir "Segun el descuento aplicado del 15% el valor total a pagar es de: $" Total_pagar
+	
+FinAlgoritmo

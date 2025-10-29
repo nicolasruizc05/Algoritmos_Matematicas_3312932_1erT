@@ -1,0 +1,16 @@
+Algoritmo Salario_trabajador_X_Horas
+	//definicion de variables
+	Definir salario como entero
+	Definir horas_trabajadas como real
+	Definir valor_hora Como Real
+	//Solicitud de datos 
+	Escribir "Por favor ingresar el valor de 1 hora trabajada"
+	Leer valor_hora
+	Escribir "Por favor ingresar el total de horas trabajadas"
+	Leer horas_trabajadas
+	// asignacion de formula
+	salario<-valor_hora*horas_trabajadas
+	Escribir "para un total de ", horas_trabajadas, " horas ", " y con un valor por hora trabajada de ", valor_hora, " Pesos"
+	Escribir "Su salario tiene un valor de = ", salario, " Pesos"
+	
+FinAlgoritmo

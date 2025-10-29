@@ -1,0 +1,15 @@
+Algoritmo Masa_del_aire
+	//definir variables
+	Definir masa, presion, volumen, temperatura Como Real
+	// Solicitamos los datos 
+	Escribir "por favor ingrese la temperatura"
+	leer temperatura
+	Escribir "por favor ingrese la presion"
+	leer presion
+	Escribir "por favor ingrese el volumen"
+	leer volumen
+	// asignacion de formula
+	masa<-(presion*volumen)/(0.37*(temperatura+460))
+	Escribir "la masa del aire es: ", masa
+	
+FinAlgoritmo

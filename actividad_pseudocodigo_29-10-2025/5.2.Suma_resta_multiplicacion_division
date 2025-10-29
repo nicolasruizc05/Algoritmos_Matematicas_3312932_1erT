@@ -1,0 +1,27 @@
+Algoritmo Suma_resta_multiplicacion_division_dos_numeros
+	// Definicion de variables
+	Definir suma Como entero
+	definir resta Como Entero
+	definir multiplicacion Como Entero
+	definir division Como Real
+	definir N1 Como Entero
+	definir N2 Como Entero
+	// comienza el codigo pidiendo registrar el 1er numero para poder hacer las operaciones
+	Escribir "por favor registre su primer numero para poder realizar las operaciones, recordar que tiene que ser un numero entero"
+	leer N1
+	// registro del 2do numero 
+	Escribir "por favor registre su segundo numero para poder realizar las operaciones, recordar que tiene que ser un numero entero"
+	Leer N2
+	// se asignan los valores de las variables 
+	suma<- N1+N2
+	resta<- N1-N2
+	multiplicacion<- N1*N2
+	division<- N1/N2
+	// se muestra el resultado de las operaciones 
+	Escribir "Dados los numeros", " ", N1, " ","Y", " ", N2
+	Escribir "La suma es"," ", "=", " ", suma
+	Escribir "La resta es", " ", "=", " ", resta
+	Escribir "La multiplicacion es", " ", "=", " ", multiplicacion
+	Escribir "La division es", " ", "=", " ", division 
+	
+FinAlgoritmo
