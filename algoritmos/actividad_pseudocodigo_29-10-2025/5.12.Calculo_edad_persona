@@ -14,11 +14,11 @@ Algoritmo Calculo_edad_persona
 	Escribir "por favor ingrese su dia de nacimiento"
 	leer dia_n
 	//solicitamos dia actual
-	Escribir "por favor ingrese su año de nacimiento"
+	Escribir "por favor ingrese el año actual"
 	Leer ano_a
-	Escribir "por favor ingrese su mes de nacimiento"
+	Escribir "por favor ingrese el mes de actual"
 	Leer mes_a
-	Escribir "por favor ingrese su dia de nacimiento"
+	Escribir "por favor ingrese el dia de actual"
 	leer dia_a
 	//Asignacion de operaciones 
 	conversion_ano_n<-ano_n*365
