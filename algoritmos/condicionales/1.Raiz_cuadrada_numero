@@ -1,0 +1,15 @@
+Algoritmo Raiz_cuadrada_numero
+	//definir variables
+	Definir num Como Entero
+	definir raiz_cuadrada Como real
+	//Solicitar datos 
+	Escribir "Por favor digite el numero el cual quiere saber la raiz cuadrada"
+	leer num
+	//Realizar operacion 
+	si num>0 Entonces
+		raiz_cuadrada<- raiz(num)
+		Escribir "La raiz del numero ",num," es= ",raiz_cuadrada
+	SiNo
+		Escribir "El numero tiene raiz imaginaria"
+	FinSi
+FinAlgoritmo

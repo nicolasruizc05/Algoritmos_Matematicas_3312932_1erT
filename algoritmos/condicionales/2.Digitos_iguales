@@ -1,0 +1,24 @@
+Algoritmo Digitos_iguales
+	//defnicion de variables
+	Definir num Como Entero
+	definir n1,n2 Como Entero
+	Definir divisor Como Entero
+	divisor<-10
+	//Solicitar datos
+	Escribir "Por favor digite un numero de 2 digitos"
+	Leer num
+	//asignacion de variables
+	n1<-trunc(num/divisor)
+	n2<-num mod divisor
+	//Proceso logico
+	si n1=n2 Entonces
+		Escribir "Los digitos del numero: ",num," Son iguales"
+		Escribir "El primer digito es: ", n1
+		Escribir "El segundo digito es: ", n2
+	SiNo
+		Escribir "Los digitos del numero: ",num," Son diferentes"
+		Escribir "El primer digito es: ", n1
+		Escribir "El segundo digito es: ", n2
+		
+	FinSi
+FinAlgoritmo

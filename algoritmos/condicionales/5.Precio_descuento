@@ -1,0 +1,31 @@
+Algoritmo Precio_descuento
+	// Definicion variables
+	Definir Nombre Como Caracter
+	Definir Price Como Real
+	Definir cantidad Como Entero
+	Definir total Como Real
+	Definir descuento Como Real
+	Definir neto Como Real
+	// Solicitar datos
+	Escribir "Por favor registre el nombre del producto que desea comprar"
+	Leer Nombre
+	Escribir "Por favor registre el valor del producto que desea comprar"
+	Leer Price
+	Escribir "Por favor introduzca la cantidad que desea comprar"
+	Leer cantidad
+	// Asignacion 
+	total<-cantidad*Price
+	//Condicional
+	si cantidad>=3 Entonces
+		descuento<-(total*0.2)
+	SiNo
+		si cantidad>=2 Entonces
+			descuento<-(total*0.1)
+		SiNo
+			descuento<-(total*0.05)
+		FinSi
+	FinSi
+	neto<-total-descuento
+	Escribir "||Producto","|| Precio","||cantidad","||total","||descuento","||neto","||"
+	Escribir "|| "  ,Nombre,  "  || "  ,Price, "  || "   ,cantidad, "  || " ,total, "  || " ,descuento, "  || " ,neto, " || "
+FinAlgoritmo

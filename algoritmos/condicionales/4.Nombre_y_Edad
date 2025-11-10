@@ -1,0 +1,17 @@
+Algoritmo Nombre_y_Edad
+	//Defnicion de variables
+	Definir Nombre Como Caracter
+	Definir Edad Como Entero
+	//solicitud de datos
+	Escribir "Por favor registre su nombre"
+	leer Nombre
+	Escribir "Por favor registre su edad"
+	Leer Edad
+	//Condicionales
+	si Edad>=18 Entonces
+		Escribir Nombre, " tiene ", Edad, " años y es Mayor de edad"
+	SiNo
+		Escribir Nombre, " tiene ", Edad, " años y es Menor de edad"
+	FinSi
+	
+FinAlgoritmo

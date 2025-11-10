@@ -1,0 +1,24 @@
+Algoritmo N1_y_N2_suma_resta_multi_division
+	// definicion de variables
+	Definir N1,N2 Como Entero
+	Definir Suma,Resta,multiplicacion Como Entero
+	Definir division Como Real
+	// Solicitud de datos
+	Escribir "Por favor digite el primer numero"
+	Leer N1
+	Escribir "Por favor digite el segundo numero"
+	Leer N2
+	//Asignacion de operaciones
+	Suma<-N1+N2
+	Resta<-N1-N2
+	multiplicacion<-N1*N2
+	division<-N1/N2
+	// Condicion y Proceso 
+	si N1>N2 Entonces
+		Escribir "La suma del numero que digito primero ",N1, " y el numero que digito segundo ",N2," es: " Suma
+		Escribir "La resta del numero que digito primero ",N1, " y el numero que digito segundo ",N2," es: " Resta
+	SiNo
+		Escribir "La multiplicacion del numero que digito primero ",N1, " y el numero que digito segundo ",N2," es: " multiplicacion
+		Escribir "La division del numero que digito primero ",N1, " y el numero que digito segundo ",N2," es: " division
+	FinSi
+FinAlgoritmo
