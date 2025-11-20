@@ -15,7 +15,7 @@ Algoritmo Menu_opciones
 		1:
 			Escribir " Por favor registre el valor de 1 lado del cuadrado: "
 			Leer A
-			cuadrado<-A*A*A*A
+			cuadrado<-A^2
 			Escribir "El área del cuadrado es:" 
 			Escribir cuadrado
 		2:

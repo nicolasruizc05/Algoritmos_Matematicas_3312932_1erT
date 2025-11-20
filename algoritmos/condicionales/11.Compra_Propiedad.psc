@@ -1,8 +1,8 @@
 Algoritmo Compra_Propiedad
 	//definicion de variables
-	Definir metro como real
-	Definir price,total,descuento,fp,recargo Como Entero
-	Definir inicial Como Entero
+	Definir metro,price,total,descuento,recargo,inicial como real
+	Definir fp Como Entero
+	
 	//Solicitud de datos
 	Escribir "Por favor registre la cantidad de metros cuadrados hay en la propiedad"
 	Leer metro
@@ -15,12 +15,15 @@ Algoritmo Compra_Propiedad
 	//Precio total 
 	total<-price*metro
 	inicial<-(total*0.20)
+	descuento<-0
+	recargo<-0
 	si fp=1 o fp=2  Entonces
 		si fp=1 Entonces
 			//calculamos el descuento
 			descuento<-inicial*0.10
 			//calculamos la cuota inicial con el descuento
 			inicial<-inicial-descuento
+			total<-total-descuento+recargo
 			Escribir "El precio de la propiedad es: ", total
 			Escribir "El valor de la cuota inicial es:" ,inicial
 		SiNo
@@ -28,6 +31,7 @@ Algoritmo Compra_Propiedad
 			recargo<-inicial*0.08
 			//calculamos la cuota inicial con el descuento
 			inicial<-inicial+recargo
+			total<-total-descuento+recargo
 			Escribir "El precio de la propiedad es: ", total
 			Escribir "El valor de la cuota inicial es:" ,inicial
 		FinSi

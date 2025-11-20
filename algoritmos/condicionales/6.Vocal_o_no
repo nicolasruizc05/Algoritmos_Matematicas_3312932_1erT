@@ -4,6 +4,8 @@ Algoritmo Vocal_o_no
 	//solicitar datos
 	Escribir "por favor escriba una letra"
 	Leer letra
+	//convertir mayuscula en minuscula
+	letra=Minusculas(letra)
 	//Condicionales
 	Si	letra = "a" O letra = "e" O letra = "i" O letra = "o" O letra = "u" Entonces
 		Escribir "La letra que usted seleccionó es: ", letra, " Y es una vocal"
