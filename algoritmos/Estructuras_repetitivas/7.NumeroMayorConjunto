@@ -1,0 +1,22 @@
+//Encontrar el mayor valor de un conjunto de n números dados. (Mientras)
+Algoritmo NumeroMayor
+	definir n,numero, contador,mayor Como Entero
+	Escribir "Ingrese la cantidad de numeros: "
+	Leer n
+	contador<-0
+	mayor<- 0
+	numero<-0
+	
+	Mientras contador<n Hacer
+		Limpiar Pantalla
+		Escribir "Ingrese un numero entero "
+		leer numero
+		si numero>mayor Entonces
+			mayor<- numero
+		FinSi
+		contador<-contador+1
+	
+	FinMientras
+	Escribir "El numero mayor del conjunto de numeros, ",n, " es: ",mayor
+	
+FinAlgoritmo

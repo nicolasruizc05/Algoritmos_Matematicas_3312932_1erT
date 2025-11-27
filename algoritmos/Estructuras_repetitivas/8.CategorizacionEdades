@@ -1,0 +1,43 @@
+//Construir un algoritmo que permita determinar cuántas personas son categorizados como
+//niños, jóvenes, adultos y ancianos para n edades ingresadas por el usuario.
+// Un niño es aquel cuya edad es menor a 15 años.
+// Un joven es aquel cuya edad es mayor o igual a 15 y menor a 18 años.
+// Un adulto es aquel cuya edad es mayor o igual a 18 años y menor a 70 años.
+// Un anciano es aquella persona cuya edades mayor o igual a 70 años.
+//		El algoritmo se debe hacer para 10 personas
+Algoritmo categorizacionEdadespara i <-0 hasta 4 Hacer
+	tercero[i]<- primero[i]  + segundo[i]
+FinPara
+	definir i, edad,ninio,joven,adulto,anciano Como Entero
+	Definir enter Como Caracter
+	ninio<-0
+	joven<-0
+	adulto<-0
+	anciano<-0
+	
+	para i<-1 hasta 10 Hacer
+		Escribir "Ingrese su edad" 
+		leer edad
+		si edad <15 Entonces
+			ninio<-ninio+1
+		SiNo
+			si edad>=15 y edad<18 Entonces
+				joven<-joven+1
+			SiNo
+				si edad >18 y edad<70 Entonces
+					adulto<-adulto+1
+				SiNo
+					anciano<-anciano+1
+				FinSi
+			FinSi
+		FinSi
+		Escribir "Edad registrada exitosamente"
+		Escribir "Presione enter para continuar"
+		leer enter
+		Limpiar Pantalla
+	FinPara
+	Escribir "La cantidad de niños registrada fue: ",ninio
+	Escribir "La cantidad de jovenes registrada fue: ",joven
+	Escribir "La cantidad de adultos registrada fue: ",adulto
+	Escribir "La cantidad de ancianos registrada fue: ",anciano
+FinAlgoritmo
