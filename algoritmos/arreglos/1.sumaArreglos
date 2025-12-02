@@ -1,0 +1,39 @@
+//Hacer un algoritmo que sume dos arreglos de 5 posiciones con números enteros en un tercer
+//		arreglo. Se debe mostrar el contenido de los dos arreglos con números leídos, así como
+//		también el contenido del arreglo con la suma. Los números deben ser ingresados por el
+//		usuario.
+Algoritmo sumaArreglos
+	Dimension primero[5],segundo[5],tercero[5]
+	definir primero, segundo,tercero, i Como Entero
+	
+	para i <-0 hasta 4 Hacer
+		Escribir "registre numero"
+		leer primero[i]
+	FinPara
+	
+	Escribir "Los valores del primer arreglo es: "
+	para i <-0 hasta 4 Hacer
+		
+		Escribir primero[i], " " Sin Saltar 
+	FinPara
+	
+	Escribir " "
+	para i <-0 hasta 4 Hacer
+		Escribir "registre numero"
+		leer segundo[i]
+	FinPara
+	Escribir "Los valores del segundo arreglo es: "
+	para i <-0 hasta 4 Hacer
+		
+		Escribir segundo[i], " " Sin Saltar
+	FinPara
+	Escribir " "
+	
+
+	para i <-0 hasta 4 Hacer
+		tercero[i]<- primero[i]  + segundo[i]
+	FinPara
+	para i <-0 hasta 4 Hacer
+		Escribir tercero[i], " " Sin Saltar
+	FinPara
+FinAlgoritmo

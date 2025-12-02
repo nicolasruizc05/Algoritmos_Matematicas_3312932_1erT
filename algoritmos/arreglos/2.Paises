@@ -1,0 +1,29 @@
+//Hacer un algoritmo que lea un arreglo de 5 posiciones con el nombre de países y como
+//		resultado se debe mostrar el arreglo con leído y otro arreglo generado que va a contener la
+//		cantidad de letras del nombre del país. Ejemplo
+//	Arreglo de Entrada:
+//		Perú Colombia España Palestina Brasil
+//	Arreglo Generado		
+//		4 8 6 9 6
+Algoritmo Paises
+	dimension pais[5],Numero[5]
+	Definir pais Como Caracter
+	definir numero,i Como Entero
+	
+	para i<-0 hasta 4 Hacer
+		Escribir "Ingrese Pais"
+		leer pais[i]
+	FinPara
+	para i<-0 Hasta 4 Hacer
+		numero[i]<-Longitud(pais[i])
+	FinPara
+	para i<-0 hasta 4 Hacer
+		Escribir  pais[i], " " Sin Saltar
+	FinPara
+	Escribir " "
+	para i<-0 hasta 4 Hacer
+		Escribir numero[i], " " Sin Saltar
+		
+	FinPara
+	
+FinAlgoritmo
