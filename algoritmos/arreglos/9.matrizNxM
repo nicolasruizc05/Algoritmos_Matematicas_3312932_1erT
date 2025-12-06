@@ -1,0 +1,36 @@
+Algoritmo sin_titulo
+	dimension numeros[3,4],letras[3,4]
+	definir numeros,fila, columna Como Entero
+	Definir letras Como Caracter
+	//Leer numeros 
+	para fila<-0 hasta 2 Hacer
+		para columna<-0 Hasta 3 Hacer
+			Escribir "Digite un numero entero "
+			leer numeros[fila,columna]
+		FinPara
+	FinPara
+	//Ver la matriz
+	para fila<-0 hasta 2 Hacer
+		para columna<-0 Hasta 3 Hacer
+			Escribir "La matriz de numeros es: "
+			Escribir numeros[fila,columna]
+		FinPara
+	FinPara
+	//Convertir numeros a par o impar
+	para fila<-0 Hasta 2 Hacer
+		para columna<- 0 Hasta 3 Hacer
+			si numeros[fila,columna] mod 2 =0 Entonces
+				letras[fila,columna]<-"P"
+			SiNo
+				letras[fila,columna]<-"I"
+			FinSi
+		FinPara
+	FinPara
+	// mostrar matriz con letas
+	para fila<-0 hasta 2 Hacer
+		para columna<-0 Hasta 3 Hacer
+			Escribir "La matriz de numeros es: "
+			Escribir letras[fila,columna]
+		FinPara
+	FinPara
+FinAlgoritmo

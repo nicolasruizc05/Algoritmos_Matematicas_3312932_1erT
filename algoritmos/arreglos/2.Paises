@@ -18,12 +18,9 @@ Algoritmo Paises
 		numero[i]<-Longitud(pais[i])
 	FinPara
 	para i<-0 hasta 4 Hacer
-		Escribir  pais[i], " " Sin Saltar
+	Escribir  pais[i], " " ,"-> ",numero[i], " "
 	FinPara
 	Escribir " "
-	para i<-0 hasta 4 Hacer
-		Escribir numero[i], " " Sin Saltar
-		
-	FinPara
+
 	
 FinAlgoritmo

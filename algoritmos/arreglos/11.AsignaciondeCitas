@@ -1,0 +1,116 @@
+Algoritmo AsignacionCitas
+	dimension citas[8,2]
+	definir citas,i,cedula,opc,hora,j,encontrado Como Entero
+	definir ocupado, asignado Como Logico
+	
+	para i=0 hasta 7 Hacer
+		citas[i,0]=0
+		citas[i,1]=0
+	FinPara
+	
+	repetir
+		Escribir "---MENU ASIGNACION CITAS---"
+		Escribir "Seleccione una opción en el siguiente rango según lo que desea hacer"
+		Escribir "1.Asignar cita"
+		Escribir "2.Consultar citas"
+		Escribir "3.Consultar cita por cedula"
+		Escribir "4.Consultar cita por hora "
+		Escribir "5.Salir"
+		leer opc
+		
+		segun opc Hacer
+			
+			
+			1:
+				Limpiar Pantalla
+				Escribir "---Asignación de citas ---"
+				Escribir "Ingrese Numero de documento"
+				leer cedula
+				Escribir "Ingrese hora de la cita"
+				leer hora
+				ocupado=Falso
+				
+				Repetir
+					ocupado=Falso
+					
+					
+					para i=0 hasta 7 Hacer
+						si hora=citas[i,0] Entonces
+							Escribir "Ya existe cita a esa hora, ingrese otra hora"
+							leer hora
+							ocupado=Verdadero
+						FinSi
+					FinPara
+					
+					si ocupado=Falso Entonces
+						asignado=Falso
+						j=0
+						Mientras j<=7 Y asignado=Falso Hacer
+							si citas[j,0]=0 Entonces
+								citas[j,0]=hora
+								citas[j,1]=cedula
+								Escribir "Cita asignada exitosamente"
+								asignado=Verdadero
+								ocupado=Verdadero
+							FinSi
+							j=j+1
+						FinMientras
+						
+						si asignado=Falso Entonces
+							Escribir "No hay espacios disponibles para citas"
+							ocupado=Verdadero
+						FinSi
+					FinSi
+				Hasta Que ocupado=Verdadero
+			2:
+				Limpiar Pantalla
+				Escribir "---Consultar citas---"
+				Escribir " Hora ", " ", " Paciente "
+				para i=0 Hasta 7 Hacer
+					Escribir citas[i,0], " - ", citas[i,1]
+				FinPara
+				
+			3:
+				Limpiar Pantalla
+				Escribir "---Consultar cita por identificacion---"
+				Escribir "Ingrese la identificación"
+				leer cedula
+				encontrado=0
+				
+				para i=0 Hasta 7 Hacer
+					si cedula=citas[i,1] Entonces
+						Escribir "Cita encontrada"
+						Escribir "Hora: ",citas[i,0], " Id paciente ",citas[i,1]
+						encontrado=1
+					FinSi
+				FinPara
+				
+				si encontrado=0 Entonces
+					Escribir "El paciente ",cedula," no tiene cita asignada"
+				FinSi
+				
+			4:
+				Limpiar Pantalla
+				Escribir "---Consultar cita por hora---"
+				Escribir "Ingrese la hora: "
+				leer hora
+				encontrado=0
+				
+				para i=0 Hasta 7 Hacer
+					si hora=citas[i,0] Entonces
+						Escribir "Cita encontrada"
+						Escribir "Hora: ",hora, " Id paciente: ",citas[i,1]
+						encontrado=1
+					FinSi
+				FinPara
+				
+				si encontrado=0 Entonces
+					Escribir "No hay cita asignada a la hora ",hora
+				FinSi
+				
+			5:
+				Escribir "Finalizó el Programa"
+				
+		FinSegun
+	Hasta Que opc=5
+FinAlgoritmo
